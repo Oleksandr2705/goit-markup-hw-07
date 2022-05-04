@@ -4,59 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
-         rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-     <title>Студия</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Студия</title>
   </head>
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <div class="container nav-container">
+      <div class="container header__container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+          <a class="logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
           <ul class="header-list">
-            <li class="item">
-              <a class="link current link-line" href="./index.html">Студия</a>
+            <li class="header-list__item">
+              <a class="header-list__link link--line current" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="header-list__item">
+              <a class="header-list__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="link" href="#contacts">Контакты</a>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav-list">
-          <li class="item">
+        <ul class="auth-nav">
+          <li class="auth-nav__item">
             <a
-              class="link-mail"
+              class="auth-nav__link"
               href="mailto:info@devstudio.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="иконка конверта"
             >
-              <svg class="mail-icon" width="16" height="16">
+              <svg class="auth-nav__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-mail-new"></use></svg
-                 >info@devstudio.com</a
+              >info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="auth-nav__item">
             <a
-              class="link-tel"
-                href="tel:+380961111111"
+              class="auth-nav__link"
+              href="tel:+380961111111"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="иконка телефона"
             >
-              <svg class="tel-icon" width="16" height="16">
+              <svg class="auth-nav__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-tel-new"></use></svg
               >+38 096 111 11 11</a
             >
@@ -66,61 +67,63 @@
     </header>
     <!--Главный контент-->
     <main>
-      <section class="hero-section">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero-section__title">
             эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero-section__button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Наши преймущества-->
-      <section class="section-benefits">
-        <div class="container benefits-item">
+      <section class="benefits">
+        <div class="container benefits__container">
           <h2 class="visually-hidden">Список преймуществ</h2>
-          <ul class="section-benefits-list">
-            <li class="item">
-              <div class="benefits-slide">
-                <svg class="benefits-icon" width="70" height="70">
+          <ul class="benefits-list">
+            <li class="benefits-list__item">
+              <div class="benefits-content">
+                <svg class="benefits-content__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-benefits-1"></use>
                 </svg>
               </div>
-              <h3 class="section-benefits-title">внимание к деталям</h3>
-              <p class="section-benefits-text">
+              <h3 class="benefits-list__title">внимание к деталям</h3>
+              <p class="benefits-list__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="item">
-              <div class="benefits-slide">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-content">
+                <svg class="benefits-content__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-benefits-2"></use>
                 </svg>
               </div>
-              <h3 class="section-benefits-title">пунктуальность</h3>
-              <p class="section-benefits-text">
+              <h3 class="benefits-list__title">пунктуальность</h3>
+              <p class="benefits-list__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
-              <div class="benefits-slide">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-content">
+                <svg class="benefits-content__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-benefits-3"></use>
                 </svg>
               </div>
-              <h3 class="section-benefits-title">планирование</h3>
-              <p class="section-benefits-text">
+              <h3 class="benefits-list__title">планирование</h3>
+              <p class="benefits-list__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="item">
-              <div class="benefits-slide">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-content">
+                <svg class="benefits-content__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-benefits-4"></use>
                 </svg>
               </div>
-              <h3 class="section-benefits-title">современные технологии</h3>
-              <p class="section-benefits-text">
+              <h3 class="benefits-list__title">современные технологии</h3>
+              <p class="benefits-list__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -128,41 +131,41 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="our-work-section">
+      <section class="work">
         <div class="container">
-          <h2 class="our-work-title">Чем мы занимаемся</h2>
-          <ul class="our-work-list">
-            <li class="item">
+          <h2 class="work-title">Чем мы занимаемся</h2>
+          <ul class="work-list">
+            <li class="work-list__item">
               <img
                 src="./images/foto1.jpg"
-                alt=" foto1 програмирует"
+                alt="foto1 програмирует"
                 width="370"
                 height="294"
               />
-              <div class="our-work-label">
-                <h3 class="work-label-title">Десктопные приложения</h3>
+              <div class="work-label">
+                <h3 class="work-label__title">Десктопные приложения</h3>
               </div>
             </li>
-            <li class="item">
+            <li class="work-list__item">
               <img
                 src="./images/foto2.jpg"
-                alt=" foto2 делает логотипы"
+                alt="foto2 делает логотипы"
                 width="370"
                 height="294"
               />
-              <div class="our-work-label">
-                <h3 class="work-label-title">Мобильные приложения</h3>
+              <div class="work-label">
+                <h3 class="work-label__title">Мобильные приложения</h3>
               </div>
             </li>
-            <li class="item">
+            <li class="work-list__item">
               <img
                 src="./images/foto3.jpg"
-                   alt="foto3 ретуширует"
+                alt="foto3 ретуширует"
                 width="370"
                 height="294"
               />
-              <div class="our-work-label">
-                <h3 class="work-label-title">Дизайнерские решения</h3>
+              <div class="work-label">
+                <h3 class="work-label__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -243,7 +246,7 @@
               <img
                 class="our-team-list-card"
                 src="./images/people2.jpg"
-                alt="people2 портрет женщины"
+                alt="people2 портрет женщины в очках"
                 width="270"
                 height="260"
               />
@@ -534,7 +537,9 @@
     <footer class="footer" id="contacts">
       <div class="container footer-web">
         <div class="footer-collums">
-          <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+          <a class="logo logo--complain" href="./index.html"
+            >Web<span class="logo logo--white">Studio</span></a
+          >
           <address class="adress-footer">
             <ul class="footer-list">
               <li class="item">
